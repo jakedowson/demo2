@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    username: root
+    password: lear2008
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/class1
+
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
+
+name: abc
+
+
+#对象
+
+person:
+  name: lisi     #${name}
+  age: 20
+  address:
+  - beijing
+  - shanghai
+
+
+#注意数组需要有中间有间隔号且需要和数组元素有间隔
+address:
+  - beijing
+  - shanghai
+
+#纯量
+msg1: 'hello \n world'
+msg2: "hello \n world"
